@@ -1,7 +1,7 @@
 #include "QueryResult.h"
 #include <sstream>
 
-TextQuery::TextQuery(ifstream & in)
+TextQuery::TextQuery(ifstream & in):str(new vector<string>)
 {
 	string  line, word;
 	while (getline(in, line))
